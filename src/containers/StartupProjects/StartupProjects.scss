@@ -3,7 +3,7 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 80% !important;
 }
 .card-title {
   color: $titleColor;
@@ -62,6 +62,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); // 한 줄에 2개씩 표시
+  }
+
+  @media (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr); // 태블릿 크기에서도 한 줄에 2개
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr); // 모바일에서는 한 줄에 1개
+  }
 }
 
 .project-card-footer span.project-tag {

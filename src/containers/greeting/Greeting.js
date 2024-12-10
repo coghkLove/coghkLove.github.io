@@ -61,9 +61,9 @@ export default function Greeting() {
           <div className="greeting-image-div">
             <img
               alt="man sitting on table"
-              src={require("../../assets/images/study.jpg")}
+              src={require("../../assets/images/BIN0001.png")}
               style={{
-                width: "50%", // 이미지 너비
+                width: "40%", // 이미지 너비
                 height: "auto", // 비율 유지
                 borderRadius: "15px", // 둥근 모서리
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // 그림자 효과

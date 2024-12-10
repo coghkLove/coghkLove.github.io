@@ -19,20 +19,6 @@ export default function SoftwareSkill() {
             </li>
           ))}
         </ul>
-
-        <h3 className="skill-section-title">부가 기술</h3>
-        <ul className="dev-icons">
-          {skillsSection.softwareSkills.slice(9).map((skills, i) => (
-            <li
-              key={i}
-              className="software-skill-inline"
-              name={skills.skillName}
-            >
-              <i className={skills.fontAwesomeClassname}></i>
-              <p>{skills.skillName}</p>
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );

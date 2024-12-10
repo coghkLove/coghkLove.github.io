@@ -68,3 +68,28 @@
     order: 2;
   }
 }
+
+ul.dev-icons {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄 지원 */
+  gap: 20px; /* 아이템 간의 간격 */
+  list-style: none; /* 불필요한 리스트 스타일 제거 */
+  justify-content: center; /* 중앙 정렬 */
+  padding: 0; /* 기본 여백 제거 */
+}
+
+li.software-skill-inline {
+  display: flex;
+  flex-direction: column; /* 아이콘과 텍스트 세로 정렬 */
+  align-items: center; /* 가운데 정렬 */
+  margin: 10px; /* 각 아이템 주위에 간격 추가 */
+}
+
+li.software-skill-inline i {
+  font-size: 3rem; /* 아이콘 크기 조절 */
+  margin-bottom: 5px; /* 아이콘과 텍스트 간 간격 */
+}
+
+li.software-skill-inline p {
+  font-size: 1rem; /* 텍스트 크기 조절 */
+}
