@@ -69,7 +69,7 @@ export default function Greeting() {
                 boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // 그림자 효과
                 transition: "transform 0.3s ease, box-shadow 0.3s ease", // 애니메이션 효과
                 transform: "scale(1)", // 기본 상태
-                marginLeft: "20%"
+                marginLeft: "30%"
               }}
             />
           </div>

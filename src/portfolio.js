@@ -1,22 +1,14 @@
-/* 이 파일을 수정하여 개인 포트폴리오를 만드세요 */
-
-// 포트폴리오의 색상을 전역적으로 변경하려면 _globalColor.scss 파일을 수정하세요.
-
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // 사용자 정의 애니메이션 파일 이름으로 변경
-
-// 시작 화면(Splash Screen)
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 const splashScreen = {
-  enabled: false, // 시작 화면을 비활성화하려면 false로 설정
+  enabled: false,
   animation: splashAnimation,
-  duration: 2000 // 애니메이션 지속 시간(밀리초)
+  duration: 2000
 };
 
-// 요약 및 인사말 섹션(Summary And Greeting Section)
-
 const illustration = {
-  animated: true // 정적인 SVG를 사용하려면 false로 설정
+  animated: true
 };
 
 const greeting = {
@@ -34,21 +26,14 @@ const greeting = {
     </>
   ),
   resumeLink: "https://drive.google.com/file/d/1resume-link",
-  displayGreeting: true // 이 섹션을 숨기려면 false로 설정
+  displayGreeting: true
 };
-
-// Social Media Links
 
 const socialMediaLinks = {
-  // linkedin: "https://myinfo5330.tistory.com/",
   github: "https://github.com/coghkLove",
   gmail: "coghk66811@naver.com",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
-
-// Skills Section
 
 const skillsSection = {
   title: "성실과 책임으로 성장하는 유채화입니다.",
@@ -68,84 +53,59 @@ const skillsSection = {
     </>
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
       skillName: "Java",
-      fontAwesomeClassname: "fab fa-java" // fab (정확함)
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "Spring Boot",
-      fontAwesomeClassname: "fas fa-leaf" // fas로 수정
+      fontAwesomeClassname: "fas fa-leaf"
     },
     {
       skillName: "Oracle SQL",
-      fontAwesomeClassname: "fas fa-database" // fas로 수정
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "ReactJS",
-      fontAwesomeClassname: "fab fa-react" // fab (정확함)
+      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5" // fab (정확함)
+      fontAwesomeClassname: "fab fa-html5"
     },
     {
       skillName: "CSS3",
-      fontAwesomeClassname: "fab fa-css3-alt" // fab (정확함)
+      fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
       skillName: "Word",
-      fontAwesomeClassname: "fas fa-file-alt" // 문서 작업 관련 아이콘
+      fontAwesomeClassname: "fas fa-file-alt"
     },
     {
       skillName: "PowerPoint",
-      fontAwesomeClassname: "fas fa-file-powerpoint" // 파워포인트 관련 아이콘
+      fontAwesomeClassname: "fas fa-file-powerpoint"
     },
     {
       skillName: "Excel",
-      fontAwesomeClassname: "fas fa-file-excel" // 엑셀 관련 아이콘
+      fontAwesomeClassname: "fas fa-file-excel"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
 const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
+  display: false,
   schools: [
     {
-      schoolName: "무선 망 설계 및 최적화 경력",
-      // logo: require("./assets/images/design.png"),
+      schoolName: "",
       logo: require("./assets/images/Design2.png"),
-      subHeader: "2019 - 2024년 (6년)",
-      desc: "무선 망 설계 프로그램(Ranplan)을 활용한 무선 망 설계",
-      descBullets: [
-        "SK ONS (오송역 이음 5G) 망 설계 프로젝트 참여",
-        "SK TNS (올림픽체조경기장 5G, 의왕효성백운밸리 LTE 무선 망 설계) POC 참여",
-        "LG Uplus (마곡 M시그니처 5G) POC 참여",
-        "LG CNS (정부세종청사, 경희대학교 이음5G) 망 설계 프로젝트 참여",
-        "삼성 SDS (삼성SDS 빌딩, 한강공원 28GHz) 망 설계 및 검증 프로젝트 참여",
-        "HFR (대구테크노파크, 중앙해양중공업, 대공에코텍, 성균관대학교 이음5G) 망 설계 프로젝트 참여",
-        "KCA, ETRI, 한전KDN, 벨루션네트웍스 등 다수 업체 무선망 설계 및 검증 지원"
-      ]
-    },
-    {
-      schoolName: "5G 및 NB-IoT 통신 프로토콜 분석 경력",
-      // logo: require("./assets/images/NetworkAnalyzer.png"),
-      logo: require("./assets/images/NetworkAnalyzer2.png"),
-
       subHeader: "",
       desc: "",
       descBullets: []
     }
   ]
 };
-
-// Your top 3 proficient stacks/tech experience
 
 const techStack = {
   viewSkillBars: false, //Set it to true to show Proficiency Section
